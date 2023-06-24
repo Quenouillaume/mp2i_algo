@@ -14,7 +14,7 @@ class SelectSort extends Algorithm {
 "while i >= 0",
 "	j = index of the largest element among T[0], ... T[i]",
 "	swap T[j] and T[i]",
-"	i = i+1",
+"	i = i - 1",
 "return",
 ]
 		let blocks = null
