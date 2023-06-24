@@ -1,4 +1,3 @@
-# ALGO 7
 i_max = 0
 i = 1
 while i < n:
@@ -6,14 +5,3 @@ while i < n:
 		i_max = i
 	i = i + 1
 return i_max
-
-# BLOCKS
-
-# TRANSITION
-1
-2
-6, 3
-5, 4
-5
-2
-6
