@@ -2,6 +2,10 @@
 
 class Algorithm {
 	constructor(args, vars, lines, blocks, transition){
+		for (var i = 0; i < lines.length; i++) {
+			lines[i] = i + ". " + lines[i]
+		}
+
 		this.lines = lines
 		if (blocks == null){
 			blocks = []

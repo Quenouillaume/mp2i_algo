@@ -7,18 +7,16 @@ function swap(T, i, j){
 }
 
 
+let lines = []
+
+function preload(){
+	lines = loadStrings("max_search.txt")
+
+}
+
 
 class MaxSearch extends Algorithm {
 	constructor(){
-        let lines = [
-"i_max = 0",
-"i = 1",
-"while i < n:",
-"	if T[i] > T[i_max]:",
-"		i_max = i",
-"	i = i + 1",
-"return i_max"
-]
        	let blocks = [[0], [1], [2], [3], [4], [5], [6]]
         
 		let transition = [];
