@@ -11,3 +11,4 @@ pas à pas.
 - texte explicatif
 - montrer les variants / invariants de boucles adaptés
 - design + joli
+- organisation en chapitres
