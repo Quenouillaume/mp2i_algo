@@ -19,7 +19,7 @@ des états vers lesquels il transite.
 
 ## Exemple
 Par exemple, pour le tri par sélection, le code source est:
-
+```
 0.  i = n-1
 1.  while i >= 0:
 2.  	j_max = 0
@@ -31,9 +31,11 @@ Par exemple, pour le tri par sélection, le code source est:
 8.		swap T[j_max] and T[i]
 9.	 	i = i + 1
 10. end
+```
 
 On peut grouper les lignes 2-7 ensemble comme étant une recherche de max dans
 un tableau. Alors les états, i.e. les blocs de lignes, sont:
+```
 {
 	0: 0,
 	1: 1,
@@ -42,8 +44,10 @@ un tableau. Alors les états, i.e. les blocs de lignes, sont:
 	4: 9,
 	5: 10,
 }
+```
 
 La table des transitions est:
+```
 {
 	0: 1,
 	1: [5, 2],
@@ -52,8 +56,7 @@ La table des transitions est:
 	4: 1,
 	5: 5
 }
-
-
+```
 ## TODO
 - texte explicatif pour chaque algorithme
 - commenter le code
