@@ -8,5 +8,6 @@ pas à pas.
 
 
 ## TODO
-montrer les variants / invariants de boucles adaptés
-design + joli
+- texte explicatif
+- montrer les variants / invariants de boucles adaptés
+- design + joli
