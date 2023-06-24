@@ -8,6 +8,7 @@ pas à pas.
 
 
 ## TODO
+- commenter le code
 - texte explicatif
 - montrer les variants / invariants de boucles adaptés
 - design + joli
