@@ -69,19 +69,35 @@ class SelectSort extends Algorithm {
 		textSize(s/2);
 		fill(255);
 		for (var i = 0; i < this.vars.n; i ++){
-			square(width/2-this.vars.n/2*s + i*s, height/3, s)
 			push()
+			if (this.vars.i != null && i > this.vars.i){
+				fill(0x77,0xdd,0x77)
+			}
+			square(width/2-this.vars.n/2*s + i*s, height/3, s)
 			fill(0)
 			text(this.vars.T[i],width/2-this.vars.n/2*s + i*s, height/3)
 			pop()
 		}
 
 		if (this.vars.i != null){
-			drawArrow(width/2-this.vars.n/2*s + this.vars.i*s, height/3-s/2, 1, 'red', 'i')
+			drawArrow(width/2-this.vars.n/2*s + this.vars.i*s, height/3-s/2, 1, 'yellow', 'i')
+			push()
+			textSize(35)
+  			strokeWeight(0);
+  			fill('yellow')
+			text("i: " + this.vars.i, 50, height - 80)
+			pop()
 		}
 
 		if (this.vars.j != null){
-			drawArrow(width/2-this.vars.n/2*s + this.vars.j*s, height/3+s/2, -1, 'blue', 'j')
+			drawArrow(width/2-this.vars.n/2*s + this.vars.j*s, height/3+s/2, -1, 'black', 'j')
+			push()
+			textSize(35)
+  			strokeWeight(0);
+  			fill('black')
+			text("j: " + this.vars.j, 120, height - 80)
+			pop()
+
 		}
 	}
 
@@ -91,16 +107,18 @@ let N = 10;
 let l = [];
 let a;
 function setup() {
-	createCanvas(600, 600);
+	let cv = createCanvas(600, 600);
+	cv.parent('p5Canvas')
 	for (var k = 0; k < N; k++) {
 		l.push(floor(random(0,25*N)))
 	}
+	let pos = cv.position()
 
 	a = new SelectSort();
 	a.load_data({'T': l, 'n': N})
 
-	var bu = createButton(">>>")
-	bu.position(width - 50, 50)
+	var bu = createButton("Avancer")
+	bu.position(pos.x + width - 100, pos.y + 50)
 	bu.mousePressed(step);
 	noLoop()
 }
@@ -113,7 +131,7 @@ function step(){
 
 
 function draw(){
-	background(122)
+	background(80, 170, 200)
 	a.draw();
 }
 

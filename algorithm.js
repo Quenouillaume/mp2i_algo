@@ -28,7 +28,7 @@ class Algorithm {
 		this.end_state = transition.length - 1
 
 		let p = createElement('pre')
-		p.position(width+50, 50)
+		p.parent('pseudoCode')
 		this.code = createElement('code')
 		this.code.parent(p)
 		this.update_code()
@@ -89,7 +89,6 @@ class Algorithm {
 		while (this.state != this.end_state){
 			this.step()
 		}
-		this.draw()
 	}
 
 
