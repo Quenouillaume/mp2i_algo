@@ -1,0 +1,63 @@
+#navigation {
+	width: 150px;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding-top: 40px;
+	background-color: lightblue;
+}
+
+#navigation ul {
+list-style: none;
+margin: 8px;
+padding: 8px;
+}
+
+#navigation li {
+background: #ccc;
+border-left: 1px solid #999;
+float: left;
+}
+
+#navigation a {
+	font-weight: bold;
+	padding: 2px 3px;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: #333;
+}
+
+#navigation #currentpage a {
+	background: #fff;
+	color: #333;
+}
+
+main {
+	padding: 10px;
+	margin-left:150px;
+}
+
+curr_state {
+	color: tomato;
+}
+
+
+#p5Canvas {
+	display:inline-block;
+	vertical-align: top;
+}
+
+#code {
+	display:inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding: 5x;
+	margin: 6px;
+}
+
+#code ul {
+	list-style: none;
+}
