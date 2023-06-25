@@ -1,24 +1,39 @@
+html {
+	background-color: #F0FFFF;
+}
+
 #navigation {
-	width: 150px;
+	width: 200px;
 	height: 100%;
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	padding-top: 40px;
-	background-color: lightblue;
+	padding-top: 30px;
+	background-color: #F0FFFF;
 }
 
 #navigation ul {
-list-style: none;
-margin: 8px;
-padding: 8px;
+	list-style: none;
+	margin: 8px;
+	padding: 8px;
+}
+
+.category {
+	border-radius: 8px;
+	background-color: #F2ECFF;
+	margin: 3px;
 }
 
 #navigation li {
-background: #ccc;
-border-left: 1px solid #999;
-float: left;
+	border-left: 3px solid #89CFF0;
 }
+
+#navigation li:hover{
+	background-color: #89CFF0;
+	border-left: 3px solid #89CFF0;
+}
+
+
 
 #navigation a {
 	font-weight: bold;
@@ -26,9 +41,6 @@ float: left;
 	text-decoration: none;
 }
 
-#navigation a:hover {
-	color: #333;
-}
 
 #navigation #currentpage a {
 	background: #fff;
@@ -37,7 +49,7 @@ float: left;
 
 main {
 	padding: 10px;
-	margin-left:150px;
+	margin-left:200px;
 }
 
 curr_state {
@@ -53,7 +65,7 @@ curr_state {
 #code {
 	display:inline-block;
 	vertical-align: top;
-	width: 50%;
+	width: 40%;
 	padding: 5x;
 	margin: 6px;
 }

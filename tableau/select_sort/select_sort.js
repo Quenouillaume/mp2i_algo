@@ -131,7 +131,7 @@ function step(){
 
 
 function draw(){
-	background(80, 170, 200)
+	background(0xf0, 0xff, 0xff)
 	a.draw();
 }
 

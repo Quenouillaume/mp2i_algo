@@ -76,9 +76,27 @@ class MaxSearch extends Algorithm {
 			text(this.vars.T[i],width/2-this.vars.n/2*s + i*s, height/3)
 			pop()
 		}
-		drawArrow(width/2-this.vars.n/2*s + this.vars.i_max*s, height/3-s/2, 1, 'red', 'i_max')
 
-		drawArrow(width/2-this.vars.n/2*s + this.vars.i*s, height/3+s/2, -1, 'black', 'i')
+		if (this.vars.i != null){
+			drawArrow(width/2-this.vars.n/2*s + this.vars.i*s, height/3+s/2, -1, 'black', 'i')
+			push()
+			textSize(35)
+  			strokeWeight(0);
+  			fill('black')
+			text("i: " + this.vars.i, 50, height - 80)
+			pop()
+		}
+
+		if (this.vars.i_max != null){
+			drawArrow(width/2-this.vars.n/2*s + this.vars.i_max*s, height/3-s/2, 1, 'red', 'i_max')
+			push()
+			textSize(35)
+  			strokeWeight(0);
+  			fill('red')
+			text("i_max: " + this.vars.i_max, 220, height - 80)
+			pop()
+		}
+
 	}
 
 }
@@ -87,7 +105,15 @@ let N = 10;
 let l = [];
 let a;
 function setup() {
-	createCanvas(600, 600);
+	let cv = createCanvas(600, 600);
+	cv.parent('p5Canvas')
+	let pos = cv.position()
+
+	var bu = createButton("Avancer")
+	bu.position(pos.x + width - 100, pos.y + 50)
+	bu.mousePressed(step);
+	noLoop()
+
 	for (var k = 0; k < N; k++) {
 		l.push(floor(random(0,25*N)))
 	}
@@ -95,10 +121,7 @@ function setup() {
 	a = new MaxSearch();
 	a.load_data({'T': l, 'n': N})
 
-	var bu = createButton(">>>")
-	bu.position(width - 50, 50)
-	bu.mousePressed(step);
-	noLoop()
+
 }
 
 
@@ -109,7 +132,7 @@ function step(){
 
 
 function draw(){
-	background(122)
+	background(0xf0, 0xff, 0xff)
 	a.draw();
 }
 
