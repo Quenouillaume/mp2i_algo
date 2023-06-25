@@ -65,3 +65,4 @@ La table des transitions est:
 - organisation en chapitres
 - parsing des algorithmes et génération auto de la table des transitions
 - stockage des infos dans des JSON
+- template pour nouvel algo
