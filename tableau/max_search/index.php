@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="/guillaume.rousseau/algo/style.css">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-  <script src="https://perso.ens-lyon.fr/guillaume.rousseau/algo/algorithm.js"></script>
-  <script src="https://perso.ens-lyon.fr/guillaume.rousseau/algo/arrow.js"></script>
+  <script src="/guillaume.rousseau/algo/algorithm.js"></script>
+  <script src="/guillaume.rousseau/algo/arrow.js"></script>
   
   <script src="max_search.js"></script>
 </head>

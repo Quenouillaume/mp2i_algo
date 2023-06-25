@@ -80,21 +80,21 @@ class SelectSort extends Algorithm {
 		}
 
 		if (this.vars.i != null){
-			drawArrow(width/2-this.vars.n/2*s + this.vars.i*s, height/3-s/2, 1, 'yellow', 'i')
+			drawArrow(width/2-this.vars.n/2*s + this.vars.i*s, height/3-s/2, 1, 'black', 'i')
 			push()
 			textSize(35)
   			strokeWeight(0);
-  			fill('yellow')
+  			fill('black')
 			text("i: " + this.vars.i, 50, height - 80)
 			pop()
 		}
 
 		if (this.vars.j != null){
-			drawArrow(width/2-this.vars.n/2*s + this.vars.j*s, height/3+s/2, -1, 'black', 'j')
+			drawArrow(width/2-this.vars.n/2*s + this.vars.j*s, height/3+s/2, -1, 'red', 'j')
 			push()
 			textSize(35)
   			strokeWeight(0);
-  			fill('black')
+  			fill('red')
 			text("j: " + this.vars.j, 120, height - 80)
 			pop()
 
