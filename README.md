@@ -23,13 +23,13 @@ Par exemple, pour le tri par sélection, le code source est:
 0.  i = n-1
 1.  while i >= 0:
 2.  	j_max = 0
-3.		j = 0
-4.		while j <= i:
-5.	  		if T[j] > T[j_max]:
-6.	    		j_max = j
-7.	  		j = j + 1
-8.		swap T[j_max] and T[i]
-9.	 	i = i + 1
+3.	j = 0
+4.	while j <= i:
+5.	 	if T[j] > T[j_max]:
+6.	    	j_max = j
+7.	  	j = j + 1
+8.	swap T[j_max] and T[i]
+9.	 i = i + 1
 10. end
 ```
 
