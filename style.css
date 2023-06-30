@@ -21,6 +21,9 @@ html {
 .category {
 	border-radius: 8px;
 	background-color: #F2ECFF;
+	border-color: black;
+	border: 1px;
+	border-style: solid;
 	margin: 3px;
 }
 
